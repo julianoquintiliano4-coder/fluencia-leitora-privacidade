@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Roboticaba Fluência Leitora</title>
+<style>
+  :root { --fundo: #faf7ff; --tinta: #23133f; --roxo: #591f86; --linha: #e4dcf2; }
+  body { margin: 0; background: var(--fundo); color: var(--tinta);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { color: var(--roxo); font-size: 1.8rem; margin-bottom: .2rem; }
+  h2 { color: var(--roxo); font-size: 1.2rem; margin-top: 2rem; border-top: 1px solid var(--linha); padding-top: 1.2rem; }
+  .data { color: #6b5a8a; margin-top: 0; }
+  li { margin: .3rem 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Política de Privacidade — Roboticaba Fluência Leitora</h1>
+<p class="data">Última atualização: 10 de outubro de 2026</p>
+
+<p>O Roboticaba Fluência Leitora é um aplicativo para o professor avaliar a fluência leitora dos
+alunos: o aluno lê uma lista de palavras ou um texto em voz alta, o aplicativo grava a leitura,
+sugere quais palavras foram lidas e o professor confirma palavra por palavra. Esta política
+explica quais dados o aplicativo usa, onde eles ficam e como apagá-los. <strong>Em resumo: tudo
+fica no computador onde o aplicativo está instalado.</strong> Não há conta online, nada é enviado
+pela internet, não há anúncios nem rastreamento.</p>
+
+<h2>1. Quem é o responsável</h2>
+<p>O aplicativo é desenvolvido por <strong>Juliano Romeu Quintiliano</strong> (Roboticaba).
+Contato: <a href="mailto:julianoquintiliano4@gmail.com"><strong>julianoquintiliano4@gmail.com</strong></a>.</p>
+<p>O desenvolvedor <strong>não recebe nem tem acesso</strong> a nenhum dado digitado ou gravado
+no aplicativo. Quem decide o que cadastrar é o professor que usa o aplicativo. Em relação aos
+dados dos alunos, esse professor, ou a escola dele, é o controlador dos dados, nos termos da Lei
+Geral de Proteção de Dados (LGPD, Lei 13.709/2018).</p>
+
+<h2>2. Que dados o aplicativo guarda, e onde</h2>
+<p>Todos ficam num banco de dados e numa pasta de áudios dentro da pasta do aplicativo, no perfil
+do usuário do Windows:</p>
+<ul>
+  <li><strong>Acesso do professor:</strong> nome, e-mail (usado só como nome de acesso; o
+    aplicativo não envia e-mails) e senha. A senha é guardada cifrada (scrypt), nunca em texto. As
+    respostas às duas perguntas de recuperação também ficam cifradas; só o texto das perguntas
+    fica legível.</li>
+  <li><strong>Turmas e alunos:</strong> o nome da turma e o nome de cada aluno, como o professor
+    digitou.</li>
+  <li><strong>Identidade da escola (opcional):</strong> o nome, a logo e a cor que o professor
+    escolhe para aparecerem no programa e no cabeçalho dos relatórios em PDF.</li>
+  <li><strong>Material de leitura:</strong> as listas de palavras e os textos que o professor
+    cadastra.</li>
+  <li><strong>Avaliações:</strong> data, material lido, tempo, o resultado de cada palavra (lida,
+    errada, pulada), observações do professor e os totais usados nos relatórios.</li>
+  <li><strong>Gravação da leitura:</strong> o áudio de cada avaliação, para o professor ouvir de
+    novo durante a revisão. Ele é apagado automaticamente (seção 3).</li>
+</ul>
+
+<h2>3. O microfone e a voz do aluno</h2>
+<p>O aplicativo usa o microfone só durante uma avaliação, depois que o professor a inicia.
+<strong>O reconhecimento de voz roda no próprio computador</strong> (whisper.cpp e Vosk, programas
+locais), sem internet. Sobre o áudio:</p>
+<ul>
+  <li>os trechos usados para o reconhecimento são apagados logo depois de transcritos;</li>
+  <li>a gravação completa da avaliação fica guardada para o professor revisar, e é
+    <strong>apagada automaticamente</strong> 7 dias depois de a revisão ser confirmada, ou 30 dias
+    depois da avaliação, o que vier primeiro. O resultado escrito da avaliação continua;</li>
+  <li>o professor pode apagar a gravação antes, refazendo ou excluindo a avaliação;</li>
+  <li>o áudio nunca sai do computador, a não ser numa cópia de segurança que o próprio professor
+    exporte (seção 5).</li>
+</ul>
+<p>O Windows pergunta se o aplicativo pode usar o microfone, e a permissão pode ser retirada a
+qualquer momento em Configurações → Privacidade e segurança → Microfone.</p>
+
+<h2>4. O que NÃO acontece</h2>
+<ul>
+  <li>Nenhum dado é enviado ao desenvolvedor nem a terceiros.</li>
+  <li>Não há publicidade, rastreamento, análise de uso nem compras dentro do aplicativo.</li>
+  <li>O aplicativo não aceita conexões de outros computadores: funciona só na máquina onde está
+    instalado.</li>
+  <li>A câmera, a localização e os contatos não são usados.</li>
+</ul>
+<p>A compra e a instalação pela Microsoft Store seguem a política de privacidade da própria
+Microsoft, que é independente desta.</p>
+
+<h2>5. Cópia de segurança</h2>
+<p>O professor pode exportar uma cópia de segurança (arquivo .zip com o banco e as gravações
+ainda guardadas) e restaurá-la depois. Esse arquivo fica onde o professor o salvar; guardá-lo com
+cuidado é responsabilidade de quem o exportou, porque ele contém dados dos alunos.</p>
+
+<h2>6. Por quanto tempo os dados ficam, e como apagar</h2>
+<p>Os dados escritos ficam até o professor apagar: o aplicativo permite excluir avaliações,
+alunos e turmas (excluir uma turma apaga os alunos, as avaliações e as gravações dela). As
+gravações de áudio somem sozinhas nos prazos da seção 3. <strong>Desinstalar o aplicativo apaga
+todos os dados dele.</strong> Para guardar os dados antes, exporte uma cópia de segurança.</p>
+
+<h2>7. Crianças</h2>
+<p>As avaliações são feitas com crianças, mas quem instala, cadastra e usa o aplicativo é sempre o
+professor. Pela LGPD (art. 14), o tratamento de dados de crianças deve ser feito no melhor
+interesse delas e com o consentimento de um dos pais ou responsável; quando o aplicativo é usado
+por uma escola, cabe a ela obter esse consentimento.</p>
+
+<h2>8. Direitos</h2>
+<p>Como os dados ficam só no computador de quem usa o aplicativo, pedidos de acesso, correção ou
+exclusão devem ser feitos ao professor ou à escola que o usa. Dúvidas sobre esta política podem
+ser enviadas ao contato da seção 1.</p>
+
+<h2>9. Mudanças nesta política</h2>
+<p>Se esta política mudar, a nova versão será publicada neste endereço, com a data de
+atualização no topo.</p>
+</main>
+</body>
+</html>
